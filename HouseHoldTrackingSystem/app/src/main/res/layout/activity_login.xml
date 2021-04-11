@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".Account.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/customer_login"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/phone_number"
+            android:padding="10dp"
+            android:inputType="number"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:id="@+id/number_login"
+            android:importantForAutofill="no" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:id="@+id/password_login"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/password_login"
+            android:layout_marginTop="5dp"
+            >
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/remember_me_chkb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:textColor="@android:color/white"
+                app:cbd_strokeColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/forget_password_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget Password?"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:layout_marginLeft="70dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/log_in"
+            android:padding="6dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:id="@+id/btn_login"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:text="@string/don_t_have_account_sign_up_here"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/signup_txt"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:text="@string/login_txt"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:textSize="23sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/vet_txt"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:text="@string/login_as_a_customer_click_here"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:textSize="23sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/customer_txt"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Admin Portal"
+        android:padding="30dp"
+        android:background="@color/colorButton"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:onClick="adminLogin"
+        />
+
+
+
+
+</LinearLayout>
